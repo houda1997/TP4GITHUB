@@ -28,6 +28,7 @@ public class UserController {
 	@Autowired
 	ReserveService reserveService;
 
+
 	@RequestMapping("/login")
 	public String showLogin() {
 		return "login";
@@ -39,6 +40,7 @@ public class UserController {
 	}
 	
 	
+
 
 	@RequestMapping("/createaccount")
 	public String createAccount(Model model, Principal principal) {
@@ -96,7 +98,7 @@ public class UserController {
 		return "home";
 
 	}
-	
+
 
 }
 
